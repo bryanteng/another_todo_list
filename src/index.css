@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
 }
 
 code {
@@ -22,4 +23,10 @@ code {
 .inner{
   display: inline-block;
   font-size: 1vw;
+}
+
+.input{
+  background: transparent; 
+  color: white;
+  border: 0px;
 }
