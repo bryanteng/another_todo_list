@@ -1,21 +1,21 @@
-    
-.myLists{
-    overflow: hidden;
-}
 .lists{
     width: 100%;
     margin: 0 auto;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: scroll;
     white-space: nowrap;
-
+    height: 100%;
 }
 
 .list{
     width: 200px;
+    margin-left: 5px;
+    margin-bottom: 30px;
     position: relative;
     display: inline-block;
     overflow-y: scroll;
+    float: left;
+    border: 1px solid whitesmoke;
 }
 
 ::-webkit-scrollbar {
@@ -24,4 +24,10 @@
 }
     ::-webkit-scrollbar-thumb {
     background: grey;
+}
+
+li::before {content: "•"; color: grey;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -1em   
 }
