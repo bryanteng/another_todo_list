@@ -11,7 +11,7 @@ class lists extends Component {
 
     handleButtonClick = (event) =>{
         let prop = {title: 'title', todos:[], id: 100}
-        this.setState({lists: [...this.state.lists, {list: <List props={prop} /> , id: this.state.counter} ] , counter: this.state.counter+1 })
+        this.setState({lists: [...this.state.lists, {list: <List/> , id: this.state.counter} ] , counter: this.state.counter+1 })
     }
 
     handleDrag = (event)=>{

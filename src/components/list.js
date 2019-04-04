@@ -4,8 +4,8 @@ import '../styles/list.css'
 class list extends Component {
 
     state = {
-        title: this.props.title ? this.props.title[0] : "My Todos",
-        todos: this.props.todos ? this.props.todos : [],
+        title: "My Todos",
+        todos: [],
         id: this.props.id
     }
 
@@ -29,7 +29,6 @@ class list extends Component {
     }
 
     render() {
-        console.log(this.props, 'props for list')
         return (
             <Fragment class="list">
                 <div class="outer">
